@@ -1,7 +1,7 @@
 package main
 
 import (
-	"example/main/rpc/core"
+	"example/rpc/core"
 	"log"
 	"net"
 	"net/http"
