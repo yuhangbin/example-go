@@ -1,7 +1,6 @@
-package main
+package rpc
 
 import (
-	"example/rpc/core"
 	"log"
 	"net"
 	"net/http"
@@ -10,8 +9,9 @@ import (
 
 const serverAddress = "127.0.0.1"
 
-func main() {
-	arith := new(core.Arith)
+func server() {
+
+	arith := new(Arith)
 	rpc.Register(arith)
 	rpc.HandleHTTP()
 	l, e := net.Listen("tcp", serverAddress+":1234")
