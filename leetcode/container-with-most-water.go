@@ -1,6 +1,6 @@
 package leetcode
 
-func maxArea(height []int) int {
+func MaxArea(height []int) int {
 	head, tail := 0, len(height)-1
 
 	max := 0
