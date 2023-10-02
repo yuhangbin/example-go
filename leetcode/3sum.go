@@ -2,11 +2,8 @@ package leetcode
 
 import "sort"
 
+// https://www.code-recipe.com/post/three-sum
 func threeSum(nums []int) [][]int {
-	// 1. 0 0 0
-	// 2. - - +
-	// 3. + + -
-	// 4. + - 0
 	n := len(nums)
 	var result [][]int
 	if n < 3 {
