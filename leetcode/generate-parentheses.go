@@ -1,8 +1,9 @@
 package leetcode
 
+// https://www.geeksforgeeks.org/introduction-to-backtracking-data-structure-and-algorithm-tutorials/
 func generateParenthesis(n int) []string {
 	var res []string
-	backtrack(&res, n, 0, 0)
+	backtrack(&res, "", n, 0, 0)
 	return res
 }
 
